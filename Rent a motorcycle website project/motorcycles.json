@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "model": "YZF-R1",
+        "mark": "Yamaha",
+        "year": 2023,
+        "cc": 998,
+        "hp": 197,
+        "transmission": "6-speed manual",
+        "fuel":"Petrol/Gasoline",
+        "license": "A",
+        "pricePerDay": 129,
+        "image": "Motorcycles/r1.jpg"
+    },
+    {
+        "id": 2,
+        "model": "YZF-R6",
+        "mark": "Yamaha",
+        "year": 2017,
+        "cc": 599,
+        "hp": 118,
+        "transmission": "6-speed manual",
+        "fuel":"Petrol/Gasoline",
+        "license": "A",
+        "pricePerDay": 106,
+        "image": "Motorcycles/r6.jpg"
+    },
+    {
+        "id": 3,
+        "model": "YZF-R7",
+        "mark": "Yamaha",
+        "year": 2023,
+        "cc": 689,
+        "hp": 73,
+        "transmission": "6-speed manual",
+        "fuel":"Petrol/Gasoline",
+        "license": "A",
+        "pricePerDay": 107,
+        "image": "Motorcycles/r7.jpeg"
+    },
+    {
+        "id": 4,
+        "model": "MT-07",
+        "mark": "Yamaha",
+        "year": 2023,
+        "cc": 689,
+        "hp": 74,
+        "transmission": "6-speed manual",
+        "fuel":"Petrol/Gasoline",
+        "license": "A2",
+        "pricePerDay": 87,
+        "image": "Motorcycles/mt07.jpg"
+    },
+    {
+        "id": 5,
+        "model": "MT-09",
+        "mark": "Yamaha",
+        "year": 2023,
+        "cc": 890,
+        "hp": 119,
+        "transmission": "6-speed manual",
+        "fuel":"Petrol/Gasoline",
+        "license": "A",
+        "pricePerDay": 99,
+        "image": "Motorcycles/mt09.webp"
+    },
+    {
+        "id": 6,
+        "model": "GSX-R600",
+        "mark": "Suzuki",
+        "year": 2022,
+        "cc": 599,
+        "hp": 124,
+        "transmission": "6-speed manual",
+        "fuel":"Petrol/Gasoline",
+        "license": "A",
+        "pricePerDay": 93,
+        "image": "Motorcycles/gsxr6.jpg"
+    },
+    {
+        "id": 7,
+        "model": "GSX-R1000",
+        "mark": "Suzuki",
+        "year": 2023,
+        "cc": 999,
+        "hp": 199,
+        "transmission": "6-speed manual",
+        "fuel":"Petrol/Gasoline",
+        "license": "A",
+        "pricePerDay": 129,
+        "image": "Motorcycles/gsxr1k.jpg"
+    }
+]
