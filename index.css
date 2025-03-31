@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Inclusive%20Sans:700|Inclusive%20Sans:400");
+:root {
+  --text: hsl(0, 60%, 3%);
+  --text2: hsl(0, 0%, 15%);
+  --background: hsl(0, 20%, 99%);
+  --primary: hsl(15, 90%, 50%);
+  --secondary: hsl(0, 26%, 74%);
+  --accent: hsl(0, 65%, 65%);
+}
+:root[data-theme="dark"] {
+    --text: hsl(0, 60%, 97%);
+    --background: hsl(0, 20%, 1%);
+    --primary: hsl(15, 90%, 50%);
+    --secondary: hsl(0, 26%, 26%);
+    --accent: hsl(0, 65%, 35%);
+    --accent2: hsl(0, 0%, 5%);
+  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inclusive Sans", sans-serif;
+  font-weight: 400;
+  background-color: var(--background);
+  color: var(--text);
+}
+.ContentProps {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Inclusive Sans", sans-serif;
+  font-weight: 700;
+}
+h1 {font-size: 4.210rem;}
+h2 {font-size: 3.158rem;}
+h3 {font-size: 2.369rem;}
+h4 {font-size: 1.777rem;}
+h5 {font-size: 1.333rem;}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 6rem;
+    text-align: center;
+}
+section h2{
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--text);
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+section p{
+    color: var(--text2);
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.1em;
+}
+[data-theme="dark"] section p{
+    color: var(--text);
+}
+.container {
+  display: grid;
+  grid-template-areas:"sidebar main info";
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 1rem;
+  max-width: 100%;
+  max-height: 25rem;
+}
+.Bike-list-container {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--background);
+}
+[data-theme="dark"] .Bike-list-container,
+[data-theme="dark"] .Details{
+  background-color: var(--accent2);
+  color: var(--text);
+}
+.Bike {
+    text-decoration: underline;
+  cursor: pointer;
+  padding: 0.5rem;
+  text-align: center;
+  transition: background 0.3s ease , transform 0.2s;
+}
+.Bike:hover {
+  background-color: var(--secondary);
+  transform: scale(1.05);
+}
+.Bike.active {
+  background-color: var(--primary);
+  color: var(--text);
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+[data-theme="dark"] .Bike.active{
+    color: var(--text2);
+}
+.image-preview {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-preview img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 25rem;
+  object-fit: contain;
+}
+.Details {
+  grid-area: info;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--background);
+}
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.details-table caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  color: var(--text);
+  background: var(--accent);
+  border-radius: 10px 10px 0 0;
+}
+.details-table td {
+  border: 1px solid black;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text);
+  text-align: left;
+}
+@media (max-width: 768px) {
+    .container {
+      grid-template-areas:
+        "sidebar"
+        "main"
+        "info";
+      grid-template-columns: 1fr;
+    } 
+    .Bike-list-container,
+    .image-preview,
+    .Details {
+      width: 100%;
+    }
+  }
