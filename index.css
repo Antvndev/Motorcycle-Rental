@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 3px solid pink;
 }
 body {
   font-family: "Inclusive Sans", sans-serif;
@@ -32,7 +33,6 @@ body {
   padding: 1.5rem;
 }
 h1, h2, h3, h4, h5 {
-  font-family: "Inclusive Sans", sans-serif;
   font-weight: 700;
 }
 h1 {font-size: 4.210rem;}
@@ -65,10 +65,10 @@ section p{
 .container {
   display: grid;
   grid-template-areas:"sidebar main info";
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1.25fr 3fr 1.25fr;
   padding: 1rem;
   max-width: 100%;
-  max-height: 25rem;
+  height: auto;
 }
 .Bike-list-container {
   grid-area: sidebar;
@@ -117,7 +117,7 @@ section p{
   font-style: italic;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 25rem;
+  max-height: 26.65rem;
   object-fit: contain;
 }
 .Details {
