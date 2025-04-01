@@ -4,8 +4,8 @@
   --text2: hsl(0, 0%, 15%);
   --background: hsl(0, 20%, 99%);
   --primary: hsl(15, 90%, 50%);
-  --secondary: hsl(0, 26%, 74%);
-  --accent: hsl(0, 65%, 65%);
+  --secondary: hsl(0, 65%, 65%);
+  --accent: hsl(0, 35%, 55%);
 }
 :root[data-theme="dark"] {
     --text: hsl(0, 60%, 97%);
@@ -19,7 +19,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 3px solid pink; */
+}
+html{
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Inclusive Sans", sans-serif;
@@ -63,17 +65,22 @@ section p{
   color: var(--text);
 }
 .hero {
-  width: 100%;
   margin-top: 1rem;
 }
 
 .hero .wrapper {
   margin: 0 auto;
+  padding: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 80rem; /* Adjust this for layout width */
-  padding: 2rem;
+  max-width: 80rem;
+}
+@media (max-width: 1300px){
+  .hero .wrapper{
+    margin: 0 0;
+    padding: 0;
+  }
 }
 
 .hero .text-container {
@@ -110,7 +117,7 @@ section p{
   font-weight: bold;
   font-size: 1.125rem;
   padding: 1rem;
-  border-radius: 5px; /* Small UI improvement */
+  border-radius: 5px;
   -webkit-box-shadow: 0px 0px 15px 1px var(--accent);
   -moz-box-shadow: 0px 0px 15px 1px var(--accent);
   box-shadow: 0px 0px 15px 1px var(--accent);
@@ -129,7 +136,7 @@ section p{
   height: auto;
   object-fit: contain;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .ContentProps{
     max-width: 100%;
   }
@@ -158,6 +165,7 @@ section p{
   grid-template-columns: 1.25fr 3fr 1.25fr;
   padding: 1rem;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .Bike-list-container {
@@ -179,7 +187,7 @@ section p{
   cursor: pointer;
   padding: 0.5rem;
   text-align: center;
-  transition: background 0.3s ease , transform 0.2s;
+  transition: 0.3s ease , transform 0.2s;
 }
 .Bike:hover {
   background-color: var(--secondary);
@@ -228,7 +236,7 @@ section p{
   font-weight: bold;
   padding: 0.5rem;
   color: var(--text);
-  background: var(--accent);
+  background: var(--secondary);
   border-radius: 10px 10px 0 0;
 }
 .details-table td {
