@@ -129,6 +129,28 @@ section p{
   height: auto;
   object-fit: contain;
 }
+@media (max-width: 768px) {
+  .ContentProps{
+    max-width: 100%;
+  }
+  .hero .wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero .text-container {
+    text-align: left;
+    width: 100%;
+    overflow-wrap: break-word;  
+  }
+  .hero .text-container h1{
+    font-size: 3.8rem;
+  }
+  .hero .image-container {
+    display: none;
+  }
+}
 
 .container {
   display: grid;
