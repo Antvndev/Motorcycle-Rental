@@ -7,25 +7,44 @@
         <title>Rent a motorcycle</title>
         <link rel="shortcut icon" href="#">
         <meta name="description" content="Motorcycle rental website">
+        <!-- box icon link -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>
-    <button id="theme-toggle">Toggle Dark Mode</button>
-    <div class="ContentProps">
-        <section class="hero">
-            <div class="wrapper">
-                <div class="text-container">
-                    <p><strong>Plan your trip now</strong></p>
-                    <h1>Enjoy <span>your</span> ride with our<br>motorcycles</h1>
-                    <p>Rent the motorcycle of your dreams, Unbeatable prices, Unlimited miles, Flexible pick-up options and much more.</p>
-                    <div class="buttons">
-                        <a class="active" href="#RentalFleet">Our Fleet</a>
+        <header>
+            <a href="index.html" class="logo" >
+                <img rel="preload" width="50" height="50" src="Motorcycles/logo.png" alt="logo">
+            </a>
+            <ul class="navlist">
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="#">link3</a></li>
+                <li><a href="#">link4</a></li>
+                <li><a href="#">link5</a></li>
+            </ul>
+            <div class="right-content">
+                <button id="theme-toggle">
+                    <i class="bx bx-moon" id="theme-icon" ></i>
+                </button>
+                <div class="bx bx-menu" id="menu-icon" ></div>
+            </div>
+        </header>
+        <div class="ContentProps">
+            <section class="hero">
+                <div class="wrapper">
+                    <div class="text-container">
+                        <p><strong>Plan your trip now</strong></p>
+                        <h1>Enjoy <span>your</span> ride with our<br>motorcycles</h1>
+                        <p>Rent the motorcycle of your dreams, Unbeatable prices, Unlimited miles, Flexible pick-up options and much more.</p>
+                        <div class="buttons">
+                            <a class="active" href="#RentalFleet">Our Fleet</a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img rel="preload" as="image" width="427" height="640" src="Motorcycles/Hero.jpg" alt="Biker on his motorcycle">
                     </div>
                 </div>
-                <div class="image-container">
-                    <img rel="preload" as="image" width="427" height="640" src="Motorcycles/Hero.jpg" alt="Biker on his motorcycle">
-                </div>
-            </div>
-        </section>
+            </section>
         <main>
             <section id="RentalFleet" class="RentalFleet">
                 <h2>Rental fleet</h2>
@@ -87,5 +106,6 @@
     </div>
   </body>
 </html>
+<script src="nav.js"></script>
 <script src="motorcycles.js" ></script>
 <script src="theme.js"></script>
