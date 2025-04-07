@@ -1,8 +1,6 @@
-# 🏍️ Motorcycle Rental Website
+# 🏍️ Motorcycle Rental Website **Currently in progress**
 
 A responsive, theme-switchable web application for browsing and renting motorcycles.
-
-**Currently in progress**
 
 ---
 
