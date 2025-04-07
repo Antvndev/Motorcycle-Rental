@@ -16,14 +16,14 @@
         "id": 2,
         "model": "YZF-R6",
         "mark": "Yamaha",
-        "year": 2017,
+        "year": 2016,
         "cc": 599,
-        "hp": 118,
+        "hp": 123,
         "transmission": "6-speed manual",
         "fuel":"Petrol/Gasoline",
         "license": "A",
         "pricePerDay": 106,
-        "image": "Motorcycles/r62.jpg"
+        "image": "Motorcycles/r6.jpg"
     },
     {
         "id": 3,
@@ -36,7 +36,7 @@
         "fuel":"Petrol/Gasoline",
         "license": "A",
         "pricePerDay": 107,
-        "image": "Motorcycles/r7.jpeg"
+        "image": "Motorcycles/r7.jpg"
     },
     {
         "id": 4,
@@ -53,16 +53,16 @@
     },
     {
         "id": 5,
-        "model": "MT-09",
+        "model": "MT-10",
         "mark": "Yamaha",
-        "year": 2023,
-        "cc": 890,
-        "hp": 119,
+        "year": 2021,
+        "cc": 988,
+        "hp": 158,
         "transmission": "6-speed manual",
         "fuel":"Petrol/Gasoline",
         "license": "A",
-        "pricePerDay": 99,
-        "image": "Motorcycles/mt09.webp"
+        "pricePerDay": 110,
+        "image": "Motorcycles/mt10.jpg"
     },
     {
         "id": 6,

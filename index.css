@@ -4,15 +4,15 @@
   --text2: hsl(0, 0%, 15%);
   --background: hsl(0, 20%, 99%);
   --primary: hsl(15, 90%, 50%);
-  --secondary: hsl(0, 65%, 65%);
-  --accent: hsl(0, 35%, 55%);
+  --secondary: hsl(0, 77%, 72%);
+  --accent: hsl(0, 96%, 62%);
 }
 :root[data-theme="dark"] {
     --text: hsl(0, 60%, 97%);
     --background: hsl(0, 20%, 1%);
-    --primary: hsl(15, 90%, 50%);
-    --secondary: hsl(0, 26%, 26%);
-    --accent: hsl(0, 65%, 35%);
+    --primary: hsl(15, 100%, 50%);
+    --secondary: hsl(0, 77%, 28%);
+    --accent: hsl(0, 96%, 38%);
     --accent2: hsl(0, 0%, 5%);
   }
 * {
@@ -105,26 +105,26 @@ section p{
   color: var(--primary);
 }
 
-.hero .buttons {
+.buttons {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.hero .buttons .active {
+.buttons .active {
   background-color: var(--primary);
   color: var(--text);
   font-weight: bold;
   font-size: 1.125rem;
   padding: 1rem;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 15px 1px var(--accent);
-  -moz-box-shadow: 0px 0px 15px 1px var(--accent);
-  box-shadow: 0px 0px 15px 1px var(--accent);
+  -webkit-box-shadow: 0px 0px 15px 1px var(--secondary);
+  -moz-box-shadow: 0px 0px 15px 1px var(--secondary);
+  box-shadow: 0px 0px 15px 1px var(--secondary);
   transition: .3s ease;
 }
 .hero .buttons .active:hover{
-  background-color: var(--accent);
+  background-color: var(--secondary);
 }
 
 .hero .image-container img {
@@ -163,18 +163,17 @@ section p{
   display: grid;
   grid-template-areas:"sidebar main info";
   grid-template-columns: 1.25fr 3fr 1.25fr;
-  padding: 1rem;
   max-width: 100%;
-
 }
 .Bike-list-container {
   grid-area: sidebar;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1rem;
+  padding:0 1rem;
   border-radius: 10px;
   background-color: var(--background);
+  
 }
 [data-theme="dark"] .Bike-list-container,
 [data-theme="dark"] .Details{
@@ -193,10 +192,13 @@ section p{
   transform: scale(1.05);
 }
 .Bike.active {
-  background-color: var(--primary);
+  background-color: var(--accent);
   color: var(--text);
   font-weight: bold;
   font-size: 1.125rem;
+  -webkit-box-shadow: 0px 0px 15px 1px var(--secondary);
+  -moz-box-shadow: 0px 0px 15px 1px var(--secondary);
+  box-shadow: 0px 0px 15px 1px var(--secondary);
 }
 [data-theme="dark"] .Bike.active{
     color: var(--text2);
@@ -206,6 +208,7 @@ section p{
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items:start;
 }
 .image-preview img {
   max-width: 100%;
@@ -219,7 +222,6 @@ section p{
 }
 .Details {
   grid-area: info;
-  padding: 1rem;
   border-radius: 10px;
   text-align: center;
   background-color: var(--background);
@@ -235,7 +237,7 @@ section p{
   font-weight: bold;
   padding: 0.5rem;
   color: var(--text);
-  background: var(--secondary);
+  background: var(--accent);
   border-radius: 10px 10px 0 0;
 }
 .details-table td {
@@ -245,6 +247,12 @@ section p{
   font-weight: bold;
   color: var(--text);
   text-align: left;
+}
+.Details .buttons{
+  width: 100%;
+}
+.Details .buttons a{
+  width: 100%;
 }
 @media (max-width: 768px) {
     .container {
