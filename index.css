@@ -47,8 +47,6 @@ h3 {font-size: 1.555rem;}
   h3 {font-size: 1.3rem;}
 
 }
-/* h4 {font-size: 1.333rem;}
-h5 {font-size: 1.333rem;} */
 section{
     display: flex;
     flex-direction: column;
@@ -144,6 +142,7 @@ header .right-content{
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(32px);
+    background-color: hsl(0, 20%, 99%, 0.7); /* Light theme fallback */
     transition: all .6s ease-in-out;
   }
   .navlist a{
@@ -191,6 +190,7 @@ header .right-content{
   letter-spacing: 0.1em;
   color: var(--text);
   text-transform: uppercase;
+  word-break: break-all;
 }
 
 .hero .text-container span {
@@ -270,7 +270,7 @@ header .right-content{
   border: none;
   color: var(--text);
 }
-@media(max-width:950px){
+@media(max-width:768px){
   .PlanYourTrip .wrapper{
     grid-template-columns: 1fr;
   }
@@ -290,7 +290,7 @@ header .right-content{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding:0 1rem;
+  margin:0 1rem;
   border-radius: 10px;
   background-color: var(--background);
   
@@ -343,6 +343,7 @@ header .right-content{
 .Details {
   grid-area: info;
   border-radius: 10px;
+  margin: 0 1rem;
   text-align: center;
   background-color: var(--background);
 }
