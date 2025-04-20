@@ -6,10 +6,10 @@ A responsive, theme-switchable web application for browsing and renting motorcyc
 
 ## 🚀 Features
 
+- ✅ Responsive design
 - ✅ Dynamic bike selection with image preview
 - ✅ Detailed specs table per model
 - ✅ Light/Dark mode toggle 🌞🌙
-- ✅ Responsive design
 
 ---
 
@@ -23,10 +23,11 @@ A responsive, theme-switchable web application for browsing and renting motorcyc
 
 ---
 
-## 📁 Tech Stack used
+## 🔧 Tech Stack used
 
 - HTML5 / CSS3
 - Vanilla JavaScript (ES6+)
-- Boxicons (for icons)
-- Google Fonts (Inclusive Sans)
 - JSON (for bike data)
+- Google Fonts (Inclusive Sans)
+- Boxicons (for icons)
+- Font Awesome (for icons)
