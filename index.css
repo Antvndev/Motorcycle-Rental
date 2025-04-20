@@ -462,3 +462,70 @@ header .right-content{
     }
   }
   
+  footer {
+    background-color: var(--background);
+    color: var(--text);
+  }
+  
+  .footer-grid-container {
+    max-width: 70dvw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2rem;
+  }
+  .footer-col{
+    text-align: start;
+  }
+  .footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--primary);
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-col ul li a {
+    color: var(--text);
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .footer-col ul li a:hover {
+    color: var(--primary);
+  }
+  
+  .footer-logo {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-col .socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .footer-col .socials i {
+    font-size: 2rem;
+    color: var(--text);
+    transition: color 0.3s;
+  }
+  
+  .footer-col .socials i:hover {
+    color: var(--primary);
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid var(--secondary);
+  }
+  
