@@ -15,7 +15,7 @@ A responsive, theme-switchable web application for browsing and renting motorcyc
 
 ## 📸 Demo
 
-![Demo Screenshot](PreviewImage.jpg)
+[![Demo Screenshot](PreviewImage.jpg)](https://antvndev.github.io/Motorcycle-Rental/)
 
 > You can view a live demo [here](https://antvndev.github.io/Motorcycle-Rental/)
 
