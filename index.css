@@ -51,7 +51,7 @@ section{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 6rem;
+    padding: 7rem 0;
     text-align: center;
 }
 section h2{
@@ -77,7 +77,7 @@ header{
   top: 0;
   right: 0;
   z-index: 1000;
-  padding: 35px 7%;
+  padding: 2rem 7%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -402,66 +402,73 @@ header .right-content{
     }
   }
 
-  .Banner {
+  .contact-banner {
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 1.5rem 2rem;
     background-color: var(--background);
-    border-top: 2px solid var(--secondary);
-    border-bottom: 2px solid var(--secondary);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--secondary);
   }
   
-  .Banner-container {
+  .banner-container {
+    display: flex;
     width: 100%;
-    max-width: 50rem;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 80rem;
+    flex-wrap: wrap;
+  }
+  
+  .banner-socials,
+  .banner-contact {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 0 auto;
     gap: 1rem;
-    p{
-      margin: 0;
-    }
   }
   
-  .Banner-container .socials {
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .Banner-container .socials i {
-    font-size: 2.5rem;
+  .banner-socials a i,
+  .banner-contact a {
+    font-size: 2rem;
     color: var(--text);
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+  .banner-contact a i{
+    text-decoration: none;
+  }
+  
+  .banner-socials a:hover i,
+  .banner-contact a:hover {
+    color: var(--primary);
     cursor: pointer;
   }
   
-  .Banner-container .socials i:hover {
-    color: var(--primary);
-    transform: scale(1.2);
-  }
-  [data-theme="dark"] .Banner-container .phone-link{
-    color: var(--primary);
-  }
-  
-  .phone-link {
-    color: var(--text);
-    text-decoration: underline;
-    transition: color .2s ease;
-  }
-  .phone-link h3{
-    font-size: 2.2rem;
-  }
-  
-  .phone-link:hover {
-    color: var(--primary);
-  }
   @media (max-width: 768px) {
-    .Banner-container {
+    .banner-container {
       flex-direction: column;
       align-items: center;
+      text-align: center;
+      gap: 2rem;
+    }
+  
+    .banner-socials,
+    .banner-contact {
+      align-items: center;
+    }
+    .banner-socials{
+      flex-direction: row;
+    }
+  
+    .banner-contact a {
+      font-size: 1.2rem;
     }
   }
-  
+    
   footer {
     background-color: var(--background);
     color: var(--text);
