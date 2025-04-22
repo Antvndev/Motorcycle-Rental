@@ -416,7 +416,6 @@ header .right-content{
   
   .banner-container {
     display: flex;
-    width: 100%;
     gap: 4rem;
     align-items: center;
     justify-content: center;
@@ -461,16 +460,12 @@ header .right-content{
       gap: 2rem;
     }
   
-    .banner-socials,
-    .banner-contact {
-      align-items: center;
-    }
     .banner-socials{
       flex-direction: row;
     }
   
     .banner-contact a {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
   }
     
