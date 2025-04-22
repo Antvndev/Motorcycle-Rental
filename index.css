@@ -50,7 +50,6 @@ h3 {font-size: 1.555rem;}
 section{
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding: 7rem 0;
     text-align: center;
 }
@@ -81,7 +80,6 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: all .5 ease;
 }
 header .logo img{
   max-width: 100%;
@@ -154,10 +152,6 @@ header .right-content{
   .open{
     left: 0;
   }
-}
-
-.hero {
-  width: auto;
 }
 
 .hero .wrapper {
@@ -281,9 +275,9 @@ header .right-content{
     grid-template-columns: 1fr;
   }
 }
-#RentalFleet{
+/* #RentalFleet{
   width: auto;
-}
+} */
 
 .container {
   display: grid;
@@ -403,7 +397,6 @@ header .right-content{
   }
 
   .contact-banner {
-    width: 100%;
     padding: 1.5rem 2rem;
     background-color: var(--background);
     color: var(--text);
