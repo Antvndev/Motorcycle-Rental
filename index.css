@@ -405,6 +405,7 @@ header .right-content{
     align-items: center;
     border-top: 1px solid var(--secondary);
     border-bottom: 1px solid var(--secondary);
+    scroll-margin-top: 8rem;
   }
   
   .banner-container {
