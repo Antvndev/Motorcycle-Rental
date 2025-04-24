@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Inclusive%20Sans:700|Inclusive%20Sans:400");
-:root {
-  --text: hsl(0, 60%, 3%);
-  --textgray:hsl(0,0%,25%);
-  --background: hsl(0, 20%, 99%);
-  --primary: hsl(15, 90%, 50%);
-  --secondary: hsl(0, 77%, 72%);
-  --accent: hsl(0, 96%, 62%);
+
+:root[data-theme="light"] {
+  --text: hsl(187, 43%, 4%);
+  --background: hsl(190, 60%, 98%);
+  --primary: hsl(190, 70%, 54%);
+  --secondary: hsl(191, 81%, 71%);
+  --accent: hsl(190, 93%, 63%);
 }
 :root[data-theme="dark"] {
-  --text: hsl(0, 60%, 97%);
-  --textgray:hsl(0,0%,75%);
-  --background: hsl(0, 20%, 1%);
-  --primary: hsl(15, 100%, 50%);
-  --secondary: hsl(0, 77%, 28%);
-  --accent: hsl(0, 96%, 38%);
-  --accent2: hsl(0, 0%, 5%);
-  }
+  --text: hsl(187, 43%, 96%);
+  --background: hsl(190, 60%, 2%);
+  --primary: hsl(190, 70%, 46%);
+  --secondary: hsl(191, 81%, 29%);
+  --accent: hsl(190, 93%, 27%);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +48,6 @@ h3 {font-size: 1.555rem;}
   h1 {font-size: 3rem;}
   h2 {font-size: 2rem;}
   h3 {font-size: 1.3rem;}
-
 }
 section{
     display: flex;
@@ -64,7 +63,7 @@ section h2{
     margin-bottom: 2.5rem;
 }
 section p{
-    color: var(--text2);
+    color: var(--text);
     margin-bottom: 2.5rem;
     letter-spacing: 0.1em;
 }
@@ -107,7 +106,7 @@ header .logo img{
   transition: all .6s ease;
 }
 .navlist a:hover{
-  color: var(--primary);
+  color: var(--accent);
 }
 header .right-content{
   display: flex;
@@ -181,23 +180,17 @@ header .right-content{
 }
 .hero .text-container p{
   margin: 0;
+  letter-spacing: .03em;
 }
 .hero .text-container h1 {
   font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.03em;
   color: var(--text);
   text-transform: uppercase;
-  word-break: break-all;
-}
-
-@media(max-width:400px){
-  .hero .text-container h1{
-    font-size: clamp(11.6dvw, 6dvw, 3rem);
-  }
 }
 
 .hero .text-container span {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .buttons {
@@ -206,19 +199,23 @@ header .right-content{
   margin-top: 1rem;
 }
 
-.buttons .active {
-  background-color: var(--primary);
-  color: var(--text);
+.buttons a{
   font-weight: bold;
   font-size: 1.125rem;
   padding: 1rem;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 15px 1px var(--secondary);
-  -moz-box-shadow: 0px 0px 15px 1px var(--secondary);
-  box-shadow: 0px 0px 15px 1px var(--secondary);
   transition: .3s ease;
+  background-color: var(--secondary);
+  color: var(--text);
 }
-.hero .buttons .active:hover{
+
+.buttons .active {
+  background-color: var(--primary);
+  -webkit-box-shadow: 0px 0px 15px 5px var(--secondary);
+  -moz-box-shadow: 0px 0px 15px 5px var(--secondary);
+  box-shadow: 0px 0px 15px 5px var(--secondary);
+}
+.hero .buttons a:hover{
   background-color: var(--secondary);
 }
 
@@ -260,9 +257,7 @@ header .right-content{
 }
 .PlanYourTrip .wrapper .item{
   max-width: 15rem;
-  p{
-    color: var(--textgray);
-  }
+  
   h3{
     margin: 1rem 0;
   }
@@ -298,11 +293,7 @@ header .right-content{
   background-color: var(--background);
   
 }
-[data-theme="dark"] .Bike-list-container,
-[data-theme="dark"] .Details{
-  background-color: var(--accent2);
-  color: var(--text);
-}
+
 .Bike {
     text-decoration: underline;
   cursor: pointer;
@@ -311,12 +302,13 @@ header .right-content{
   transition: 0.3s ease , transform 0.2s;
 }
 .Bike:hover {
-  background-color: var(--secondary);
+  background-color: var(--primary);
+  color: var(--background);
   transform: scale(1.05);
 }
 .Bike.active {
   background-color: var(--accent);
-  color: var(--text);
+  color: var(--background);
   font-weight: bold;
   font-size: 1.125rem;
   -webkit-box-shadow: 0px 0px 15px 1px var(--secondary);
@@ -376,11 +368,15 @@ header .right-content{
   width: 100%;
 }
 .Details .buttons a{
+  background-color: var(--primary);
+  color: var(--text);
   width: 100%;
+  -webkit-box-shadow: 0px 0px 15px 5px var(--secondary);
+  -moz-box-shadow: 0px 0px 15px 5px var(--secondary);
+  box-shadow: 0px 0px 15px 5px var(--secondary);
 }
 .Details .buttons a:hover{
   background-color: var(--secondary);
-  color: var(--text);
 }
 @media (max-width: 768px) {
     .container {
@@ -401,8 +397,6 @@ header .right-content{
 
   .contact-banner {
     padding: 1.5rem 2rem;
-    background-color: var(--background);
-    color: var(--text);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -445,7 +439,7 @@ header .right-content{
   
   .banner-socials a:hover i,
   .banner-contact a:hover {
-    color: var(--primary);
+    color: var(--accent);
     cursor: pointer;
   }
   
@@ -530,6 +524,6 @@ header .right-content{
   }
   
   .footer-bottom {
-    border-top: 1px solid var(--secondary);
+    border-top: 1px solid var(--primary);
   }
   
