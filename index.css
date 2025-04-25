@@ -141,8 +141,7 @@ header .right-content{
     left: 100%;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(32px);
-    background-color: hsl(0, 20%, 99%, 0.9); /* Light theme fallback */
+    background-color: var(--background); /* Light theme fallback */
     transition: all .6s ease-in-out;
   }
   .navlist a{
