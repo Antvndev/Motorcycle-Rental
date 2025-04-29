@@ -458,6 +458,82 @@ header .right-content{
       font-size: 1.25rem;
     }
   }
+
+.testimonials-grid{
+  max-width: 80rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonial-card {
+  background-color: var(--background);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  max-width: 24rem;
+}
+
+.testimonial-image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonial-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.testimonial-bike {
+  font-size: 0.875rem;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-text {
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  line-height: 1.625;
+}
+
+.rating {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.star {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.star.filled {
+  color: rgb(250, 204, 21);
+  fill: rgb(250, 204, 21);
+}
+
+.star.empty {
+  color: var(--text);
+}
     
   footer {
     background-color: var(--background);
