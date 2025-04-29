@@ -10,6 +10,7 @@ A responsive, theme-switchable web application for browsing and renting motorcyc
 - ✅ Dynamic bike selection with image preview
 - ✅ Detailed specs table per model
 - ✅ Light/Dark mode toggle 🌞🌙
+- ✅ Automatic app opening anchors(contacts-dial, socials)
 
 ---
 
