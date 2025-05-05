@@ -458,6 +458,55 @@ header .right-content{
       font-size: 1.25rem;
     }
   }
+  .rental-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-margin-top: 8rem;
+  }
+  
+  .rental-form {
+    background-color:var(--background);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px var(--accent);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .rental-form select,
+  .rental-form input {
+    flex: 1 1 180px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary);
+  }
+  
+  .rental-form button {
+    flex: 1 1 100%;
+    padding: 1rem;
+    background: var(--primary);
+    color: var(--text);
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .rental-form {
+      flex-direction: column;
+    }
+    .rental-form select,
+    .rental-form input {
+      flex: 1 1 4rem;
+    }
+  }
+  
 
 .testimonials-grid{
   max-width: 80rem;
