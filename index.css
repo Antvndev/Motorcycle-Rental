@@ -488,13 +488,21 @@ header .right-content{
   
   .rental-form button {
     flex: 1 1 100%;
-    padding: 1rem;
-    background: var(--primary);
-    color: var(--text);
     font-weight: bold;
-    border: none;
-    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    padding: 1rem;
     cursor: pointer;
+    border-radius: 5px;
+    border: 0px;
+    transition: .3s ease;
+    background-color: var(--primary);
+    -webkit-box-shadow: 0px 0px 15px 5px var(--secondary);
+    -moz-box-shadow: 0px 0px 15px 5px var(--secondary);
+    box-shadow: 0px 0px 15px 5px var(--secondary);
+    color: var(--text);
+  }
+  .rental-form button:hover{
+    background-color: var(--secondary);
   }
   
   @media (max-width: 600px) {
