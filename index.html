@@ -25,13 +25,14 @@
                 <li><a href="#Contact">Contact</a></li>
             </ul>
             <div class="right-content">
-                <button id="theme-toggle">
+                <button aria-label="Search" id="theme-toggle">
                     <i class="bx bx-moon" id="theme-icon" ></i>
                 </button>
                 <div class="bx bx-menu" id="menu-icon" ></div>
             </div>
         </header>
         <div class="ContentProps">
+            <main>
             <section class="hero">
                 <div class="wrapper">
                     <div class="text-container">
@@ -69,7 +70,6 @@
                     </div>
                 </div>
             </section>
-        <main>
             <section id="RentalFleet" class="RentalFleet">
                 <h2>Rental fleet</h2>
                 <p>Choose from a variety of outstanding motorcycles to rent for your next adventure</p>
@@ -126,54 +126,56 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <section class="contact-banner" id="Contact" >
-            <div class="banner-container">
-              <div class="banner-socials">
-                <a href="#" ><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#" ><i class='bx bxl-messenger'></i></a>
-                <a href="#" ><i class='bx bxl-instagram'></i></a>
-                <a href="#" ><i class="fa-brands fa-viber"></i></a>
-              </div>
-              <div class="banner-contact">
-                <a href="tel:0123456789"><i class='bx bx-phone-call'></i><span>0123456789</span></a>
-                <a href="mailto:ExampleEmail@gmail.com"><i class='bx bx-envelope'></i><span>ExampleEmail@gmail.com</span></a>
-              </div>              
-            </div>
-          </section>
-
-          <section class="rental-banner" id="RentNow" >
-            <form class="rental-form" onsubmit="submitRental(event)">
-              <select id="bike-select" name="bike" required>
-                <option value="">Select a Bike</option>
-                <!-- JS will populate grouped options -->
-              </select>
-          
-              <input type="date" name="pickup" required placeholder="Pick-up Date" />
-              <input type="date" name="return" required placeholder="Return Date" />
-          
-              <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{10,15}" />
-          
-              <select name="license" required>
-                <option value="">Select License Type</option>
-                <option value="A">A</option>
-                <option value="A2">A2</option>
-                <option value="A1">A1</option>
-              </select>
-          
-              <button type="submit" class="active" >Reserve Now</button>
+            <section class="contact-banner" id="Contact" >
+                <div class="banner-container">
+                    <div class="banner-socials">
+                        <a aria-label="User Profile" href="#" ><i class='bx bxl-facebook-circle'></i></a>
+                        <a aria-label="User Profile" href="#" ><i class='bx bxl-messenger'></i></a>
+                        <a aria-label="User Profile" href="#" ><i class='bx bxl-instagram'></i></a>
+                        <a aria-label="User Profile" href="#" ><i class="fa-brands fa-viber"></i></a>
+                    </div>
+                    <div class="banner-contact">
+                        <a aria-label="User Profile" href="tel:0123456789"><i class='bx bx-phone-call'></i><span>0123456789</span></a>
+                        <a aria-label="User Profile" href="mailto:ExampleEmail@gmail.com"><i class='bx bx-envelope'></i><span>ExampleEmail@gmail.com</span></a>
+                    </div>              
+                </div>
+            </section>
+            
+            <section class="rental-banner" id="RentNow" >
+                <form class="rental-form" onsubmit="submitRental(event)">
+                <label for="bike-select" style="position: absolute; left: -10000000000px; top: auto; width: 1px; height: 1px; overflow: hidden; " >Choose a motorcycle</label>
+                <select id="bike-select" name="bike" required>
+                    <option value="">Select a Bike</option>
+                    <!-- JS will populate grouped options -->
+                </select>
+                
+                <input type="date" name="pickup" required placeholder="Pick-up Date" />
+                <input type="date" name="return" required placeholder="Return Date" />
+                
+                <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{10,15}" />
+                
+                <label for="bike-select" style="position: absolute; left: -10000000000px; top: auto; width: 1px; height: 1px; overflow: hidden; " >Choose a license</label>
+                <select name="license" required>
+                    <option value="">Select License Type</option>
+                    <option value="A">A</option>
+                    <option value="A2">A2</option>
+                    <option value="A1">A1</option>
+                </select>
+                
+                <button aria-label="Search" type="submit" class="active" >Reserve Now</button>
             </form>
-          </section>
-          
-
-          <section id="Testimonials" >
+        </section>
+        
+        
+        <section id="Testimonials" >
             <h2>Testimonials</h2>
             <div class="testimonials-grid">
-
+                
             </div>
-          </section>
-          
-          <section style="padding-bottom: 0;">
+        </section>
+        
+    </main>
+        <section style="padding-bottom: 0;">
             <footer>
                 <div class="footer-grid-container">
                     <div class="footer-col logo-col">
@@ -186,7 +188,7 @@
                         </h3>
                         <ul>
                             <li><a href="#RentalFleet">RentalFleet</a></li>
-                            <li><a href="#">Booking</a></li>
+                            <li><a href="#RentNow">Booking</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
@@ -203,24 +205,25 @@
                             <li><i class='bx bx-envelope' ></i> <a href="mailto:#">ExampleEmail@gmail.com</a></li>
                         </ul>
                         <div class="socials">
-                            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                            <a href="#"><i class='bx bxl-messenger'></i></a>
-                            <a href="#"><i class='bx bxl-instagram'></i></a>
-                            <a href="#"><i class="fa-brands fa-viber"></i></a>
+                            <a aria-label="User Profile" href="#"><i class='bx bxl-facebook-circle'></i></a>
+                            <a aria-label="User Profile" href="#"><i class='bx bxl-messenger'></i></a>
+                            <a aria-label="User Profile" href="#"><i class='bx bxl-instagram'></i></a>
+                            <a aria-label="User Profile" href="#"><i class="fa-brands fa-viber"></i></a>
                         </div>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47126.34578182752!2d25.54692208157454!3d42.41929211910201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a8690b30e83935%3A0x74baed1462879fb1!2sStara%20Zagora!5e0!3m2!1sen!2sbg!4v1745144084989!5m2!1sen!2sbg" 
+                        title="Google maps"
                         width="100%" height="350" style="border:0;"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
+                    </iframe>
                 </div>
-            </footer>
-            <small class="footer-bottom" >
-                &copy; 2025 MotoRental. All Rights Reserved.
-            </small>
-          </section>
-    </div>
-  </body>
+            </div>
+        </footer>
+        <small class="footer-bottom" >
+            &copy; 2025 MotoRental. All Rights Reserved.
+        </small>
+    </section>
+</div>
+</body>
 </html>
 <script src="nav.js"></script>
 <script src="motorcycles.js" ></script>
