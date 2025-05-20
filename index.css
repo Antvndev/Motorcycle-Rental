@@ -619,6 +619,9 @@ header .right-content{
   cursor: pointer;
   transition: background-color 0.3s ease, border-bottom 0.3s ease;
 }
+.tabs button:hover{
+  background-color: var(--accent);
+}
 
 .tab-button.active {
   background-color: var(--primary);
