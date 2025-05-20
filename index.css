@@ -595,6 +595,7 @@ header .right-content{
 .section-wrapper {
   max-width: 80rem;
   margin: 0 auto;
+  scroll-margin-top: 8rem;
 }
 
 /* Tabs */
