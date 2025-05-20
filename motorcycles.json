@@ -2,7 +2,7 @@
     {
         "id": 1,
         "model": "YZF-R1",
-        "mark": "Yamaha",
+        "mark": "Yamaha ",
         "year": 2023,
         "cc": 998,
         "hp": 197,
@@ -15,7 +15,7 @@
     {
         "id": 2,
         "model": "YZF-R6",
-        "mark": "Yamaha",
+        "mark": "Yamaha ",
         "year": 2016,
         "cc": 599,
         "hp": 123,
@@ -28,7 +28,7 @@
     {
         "id": 3,
         "model": "YZF-R7",
-        "mark": "Yamaha",
+        "mark": "Yamaha ",
         "year": 2023,
         "cc": 689,
         "hp": 73,
@@ -41,7 +41,7 @@
     {
         "id": 4,
         "model": "MT-07",
-        "mark": "Yamaha",
+        "mark": "Yamaha ",
         "year": 2023,
         "cc": 689,
         "hp": 74,
@@ -54,7 +54,7 @@
     {
         "id": 5,
         "model": "MT-10",
-        "mark": "Yamaha",
+        "mark": "Yamaha ",
         "year": 2021,
         "cc": 988,
         "hp": 158,
@@ -67,7 +67,7 @@
     {
         "id": 6,
         "model": "GSX-R600",
-        "mark": "Suzuki",
+        "mark": "Suzuki ",
         "year": 2022,
         "cc": 599,
         "hp": 124,
@@ -80,7 +80,7 @@
     {
         "id": 7,
         "model": "GSX-R1000",
-        "mark": "Suzuki",
+        "mark": "Suzuki ",
         "year": 2023,
         "cc": 999,
         "hp": 199,
